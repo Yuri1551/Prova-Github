@@ -10,8 +10,16 @@ class Program
         Console.WriteLine($"1 {tab[1,0]}|{tab[1,1]}|{tab[1,2]}");
         Console.WriteLine("---+---+---");
         Console.WriteLine($"2 {tab[2,0]}|{tab[2,1]}|{tab[2,2]}");
+
+        
     }
-    static bool checarvitoria(char[,])
+    static bool ChecarVitoria(char[,]  tab, char j, char i)
+    {
+        for (i = 0; i < 3; i++)
+        {
+            
+        }
+    }
     static void Main()
     {
         char[,] tabuleiro = new char[3, 3]
