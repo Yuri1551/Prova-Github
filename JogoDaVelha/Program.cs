@@ -15,10 +15,16 @@ class Program
     }
     static bool ChecarVitoria(char[,]  tab, char j, char i)
     {
-        for (i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
-            
+             if (tab[i, 0] == j && tab[i, 1] == j && tab[i, 2] == j) return true;
         }
+
+        for (int i = 0; i < 3; i++)
+        {
+            if (tab[0, i] == j && tab[1, i] == j && tab[2, i] == j) return true;
+        }
+        
     }
     static void Main()
     {
