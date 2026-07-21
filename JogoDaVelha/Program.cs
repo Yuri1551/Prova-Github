@@ -24,8 +24,12 @@ class Program
         {
             if (tab[0, i] == j && tab[1, i] == j && tab[2, i] == j) return true;
         }
-        
+        if (tab[0, 0] == j && tab[1, 1] == j && tab[2, 2] == j) return true;
+        if (tab[0, 2] == j && tab[1, 1] == j && tab[2, 0] == j) return true;
+
+        return false;
     }
+    
     static void Main()
     {
         char[,] tabuleiro = new char[3, 3]
