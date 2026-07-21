@@ -11,6 +11,7 @@ class Program
         Console.WriteLine("---+---+---");
         Console.WriteLine($"2 {tab[2,0]}|{tab[2,1]}|{tab[2,2]}");
     }
+    static bool checarvitoria(char[,])
     static void Main()
     {
         char[,] tabuleiro = new char[3, 3]
